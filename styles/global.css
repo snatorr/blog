@@ -19,21 +19,18 @@
 }
 
 html {
+    background-color: #add8e6;
+}
+
+html, body {
+    height: -webkit-fill-available;
+}
+
+body {
     background-image: url(../assets/background/back2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-    height: -webkit-fill-available;
-    overflow-x: hidden;
-    background-color: #add8e6;
-}
-
-body {
     font-family: 'ComicShanns', monospace;
     min-height: 100dvh;
 }
