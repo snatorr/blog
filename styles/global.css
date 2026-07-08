@@ -22,8 +22,7 @@ body {
     font-family: 'ComicShanns', monospace;
     background-image: url(../assets/background/back2.jpg);
     background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .header {

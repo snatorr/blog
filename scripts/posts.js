@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             titulo: "felis mes amor :33",
             fecha: "6 de julio de 2026",
             contenido: "te amo muxho mucho",
-            imagen: "../assets/pictures/ilysm.webp"
+            imagen: "assets/pictures/ilysm.webp"
         }
     ];
 
