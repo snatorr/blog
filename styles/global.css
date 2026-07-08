@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'ComicShanns';
+    src: url('../assets/fonts/ComicShannsMonoNerdFontMono-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ComicShanns';
+    src: url('../ssets/fonts/ComicShannsMonoNerdFontMono-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'ComicShanns', monospace;
+    background-image: url(../assets/background/back2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 200vh;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 
+        inset 0  0.5px 0 rgba(255, 255, 255, 0.6),
+        inset 0  -10px 20px rgba(255, 255, 255, 0.1),
+        0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_logo {
+    max-width: 100%;
+    height: 40px;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+.grid_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: 90%;
+    margin: 15px auto;
+    border-radius: 10px;background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.grid_nav-picture {
+    max-width: 100%;
+    height: 100px;
+    border: 5px solid transparent;
+    border-image-source: url(../assets/nav-assets/glitterborder.gif);
+    border-image-slice: 20;
+    border-image-repeat: stretch;
+}
+
+.grid_nav-list {
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: auto;
+    padding-left: 10px;
+    gap: 5px;
+}
+
+.grid_nav-link {
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: #0083b5;
+    padding: 3px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.grid_main {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
