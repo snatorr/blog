@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // EDITAR ENTRADAS
     const entradas = [
         {
+            titulo: "MUAJAJAJAJA",
+            fecha: "8 de julio de 2026",
+            contenido: "HOLA HIJOs de m il puta bienvenidos ami blog hijos de puta"
+        },
+        {
             titulo: "felis mes amor :33",
             fecha: "8 de julio de 2026",
             contenido: "te amo muxho mucho",
