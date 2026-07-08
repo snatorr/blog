@@ -15,6 +15,7 @@
     </header>
     <div class="grid_container">
         <nav class="grid_nav">
+            <img class="grid_nav-welcome" src="assets/nav-assets/welcome.gif">
             <img class="grid_nav-picture" src="assets/nav-assets/me.webp">
             <ul class="grid_nav-list">
                 <li class="grid_nav-list-item">
@@ -27,10 +28,52 @@
                     <a href="https://x.com/exzetagames" class="grid_nav-link" target="_blank">twitter</a>
                 </li>
             </ul>
+
+            <div class="ipod-widget">
+                <div class="ipod">
+                    <div class="screen">
+                        <img id="cover" src="" alt="cover" />
+                        <p id="track-title">Cargando...</p>
+            
+                        <div class="progress-container" id="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span> / <span id="duration-time">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="controls-wheel">
+                        <button id="play" class="ipod-btn btn-play-pause state-paused" title="Play/Pause">
+                            <span class="play-icon"></span>
+                        </button>
+                        <button id="prev" class="ipod-btn btn-prev" title="Anterior">
+                            <span class="icon-prev"></span>
+                        </button>
+                        <button id="next" class="ipod-btn btn-next" title="Siguiente">
+                            <span class="icon-next"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
         </nav>
         <main class="grid_main">
         </main>
-        <aside class="grid_aside"></aside>
+        <aside class="grid_aside">
+            <ul class="grid_aside-list">
+                <li class="grid_aside-list-item">
+                    <a href="https://www.instagram.com/santisolosanti" class="grid_aside-link" target="_blank">instagram</a>
+                </li>
+                <li class="grid_aside-list-item">
+                    <a href="https://www.youtube.com/@exzetagames1848" class="grid_aside-link" target="_blank">youtube</a>
+                </li>
+                <li class="grid_aside-list-item">
+                    <a href="https://x.com/exzetagames" class="grid_aside-link" target="_blank">twitter</a>
+                </li>
+            </ul>
+        </aside>
     </div>
 
 
@@ -47,5 +90,6 @@
     <script src="scripts/bubbles.js"></script>
     <script src="scripts/tittles.js"></script>
     <script src="scripts/posts.js"></script>
+    <script src="scripts/ipod.js"></script>
 </body>
 </html>

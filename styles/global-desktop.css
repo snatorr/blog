@@ -1,0 +1,186 @@
+body {
+    background-attachment: fixed;
+    min-height: 150dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: unset;
+    padding: 30px 0px 8px 0px;
+}
+
+.header_logo {
+    margin: unset;
+    height: unset;
+    width: auto;
+}
+
+
+
+
+
+/*------------------- GRID CONTAINER SECTION ---------------*/
+
+.grid_container {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 85%;
+    height: 130dvh;
+    gap: unset;
+    align-items: unset;
+    flex-direction: unset;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-areas:
+        "nav main aside";
+}
+
+/*------------------- GRID CONTAINER ENDS ---------------*/
+
+
+
+
+
+/*------------------- GRID NAV SECTION ---------------*/
+
+.grid_nav {
+    margin-top: unset;
+    display: unset;
+    justify-content: unset;
+    align-items: unset;
+    width: unset;
+    border-radius: unset;
+    background: unset;
+    backdrop-filter: unset;
+    border: unset;
+    grid-area: nav;
+    padding: 20px;
+}
+
+.grid_nav-welcome {
+    display: unset;
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+.grid_nav-picture {
+    height: unset;
+    border: 10px solid transparent;
+    border-image-source: url(../assets/nav-assets/glitterborder.gif);
+    border-image-slice: 20;
+    border-image-repeat: stretch;
+}
+
+.grid_nav-list {
+    display: none;
+}
+
+.ipod-widget {
+    display: unset;
+}
+
+/*------------------- GRID NAV ENDS ---------------*/
+
+
+
+
+
+/*------------------- GRID MAIN SECTION ---------------*/
+
+.grid_main {
+    width: unset;
+    grid-area: main;
+    background: unset;
+    backdrop-filter: unset;
+    border: unset;
+    border-radius: unset;
+    max-height: unset;
+    background-color: #fff;
+}
+
+.grid_main::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.grid_main::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0 12px 12px 0;
+}
+
+.grid_main::-webkit-scrollbar-thumb {
+    background: rgba(68, 218, 238, 0.4); 
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.grid_main::-webkit-scrollbar-thumb:hover {
+    background: rgba(34, 170, 204, 0.7);
+}
+
+/*------------------- GRID MAIN ENDS ---------------*/
+
+
+
+
+
+/*------------------- GRID ASIDE SECTION ---------------*/
+
+.grid_aside {
+    grid-area: aside;
+    display: unset;
+}
+
+.grid_aside-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 90%;
+    margin: auto;
+    gap: 5px;
+}
+
+.grid_aside-list-item {
+
+}
+
+.grid_aside-link {
+    display: block;
+    color: white;
+    background-color: #0083b5;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+/*------------------- GRID ASIDE ENDS ---------------*/
+
+
+
+
+
+/*------------------- GRID DECORATION SECTION ---------------*/
+
+.grid_nav, .grid_aside {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 
+        inset 0  0.5px 0 rgba(255, 255, 255, 0.6),
+        inset 0  -10px 20px rgba(255, 255, 255, 0.1),
+        0 8px 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+/*------------------- GRID DECORATION ENDS ---------------*/

@@ -1,0 +1,216 @@
+.ipod-widget {
+    all: initial;
+    display: block;
+    font-family: 'ComicShanns', monospace;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ipod-widget .ipod {
+    width: 100%;
+    max-width: 190px;
+    box-sizing: border-box;
+    /* Un celeste pastel traslúcido tipo vidrio */
+    background: rgba(175, 218, 242, 0.45); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 12px;
+    /* Sombras suaves acordes al estilo Glassmorphism */
+    box-shadow: 
+        inset 0 1px 1px rgba(255, 255, 255, 0.5),
+        0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.ipod-widget .screen {
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+}
+
+/* FIX APLICADO ACÁ: Remueve la línea negra fantasma del costado */
+.ipod-widget .screen img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #7cbcd6;
+    box-sizing: border-box; /* Mete el borde hacia adentro para que encaje perfecto */
+    background-color: #ffffff; /* Evita que se vea cualquier fondo oscuro por detrás */
+    outline: none;             /* Elimina posibles líneas de enfoque del navegador */
+}
+
+.ipod-widget .screen p {
+    font-family: 'ComicShanns', monospace;
+    font-size: 13px;
+    color: #2b4c5e; /* Texto azul/gris oscuro legible */
+    margin: 5px 0 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    font-weight: bold;
+}
+
+.ipod-widget .time-display {
+    font-size: 11px;
+    color: #4a748c;
+    font-family: 'ComicShanns', monospace;
+    font-weight: bold;
+}
+
+.ipod-widget .progress-container {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.08); /* Fondo de barra sutil */
+    height: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+    position: relative;
+}
+
+.ipod-widget .progress-bar {
+    background: #52a3cc; /* Barra de carga celeste vibrante */
+    height: 100%;
+    width: 0%;
+    border-radius: 3px;
+}
+
+/* La rueda de botones (Click Wheel) */
+.ipod-widget .controls-wheel {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    background: rgba(255, 255, 255, 0.85); /* Blanco limpio suave */
+    border-radius: 50%;
+    margin: 15px auto 5px auto;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06), inset 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.ipod-widget .ipod-btn {
+    position: absolute;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s;
+}
+
+.ipod-widget .ipod-btn:active {
+    transform: scale(0.85);
+}
+
+/* Botón central de Play/Pause */
+.ipod-widget .btn-play-pause {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #eef6fa; /* Botón central grisáceo celeste */
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    z-index: 2;
+}
+.ipod-widget .btn-play-pause:active {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.ipod-widget .play-icon {
+    display: block;
+    transition: all 0.1s ease;
+}
+
+/* Cambié el color de las flechitas e íconos internos a un azul/gris lindo (#6088a0) */
+.ipod-widget .state-paused .play-icon {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 13px solid #6088a0;
+    margin-left: 3px;
+}
+
+.ipod-widget .state-playing .play-icon {
+    width: 10px;
+    height: 12px;
+    border-left: 3px solid #6088a0;
+    border-right: 3px solid #6088a0;
+    box-sizing: border-box;
+}
+
+.ipod-widget .btn-prev {
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+.ipod-widget .btn-prev:active {
+    transform: translateY(-50%) scale(0.85);
+}
+.ipod-widget .icon-prev {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 9px solid #6088a0;
+    position: relative;
+}
+.ipod-widget .icon-prev::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 9px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 9px solid #6088a0;
+}
+
+.ipod-widget .btn-next {
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+}
+.ipod-widget .btn-next:active {
+    transform: translateY(-50%) scale(0.85);
+}
+.ipod-widget .icon-next {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 9px solid #6088a0;
+    position: relative;
+}
+.ipod-widget .icon-next::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: 9px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 9px solid #6088a0;
+}

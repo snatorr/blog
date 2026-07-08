@@ -119,6 +119,14 @@ body {
     text-align: center;
 }
 
+.grid_nav-welcome {
+    display: none;
+}
+
+.ipod-widget {
+    display: none;
+}
+
 /*------------------- GRID NAV ENDS ---------------*/
 
 
@@ -139,3 +147,16 @@ body {
 }
 
 /*------------------- GRID MAIN ENDS ---------------*/
+
+
+
+
+
+
+/*------------------- GRID ASIDE SECTION ---------------*/
+
+.grid_aside {
+    display: none;
+}
+
+/*------------------- GRID ASIDE ENDS ---------------*/

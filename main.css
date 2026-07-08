@@ -1,3 +1,5 @@
 @import url("styles/global.css");
-@import url(styles/bubbles.css);
-@import url(styles/posts.css);
+@import url("styles/global-desktop.css") (min-width: 1024px);
+@import url("styles/bubbles.css");
+@import url("styles/posts.css");
+@import url("styles/ipod-widget.css") (min-width: 1024px);
