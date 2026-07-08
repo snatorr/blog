@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const entradas = [
         {
             titulo: "felis mes amor :33",
-            fecha: "6 de julio de 2026",
+            fecha: "8 de julio de 2026",
             contenido: "te amo muxho mucho",
             imagen: "assets/pictures/ilysm.webp"
         }
