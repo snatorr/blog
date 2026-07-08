@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'ComicShanns';
-    src: url('../ssets/fonts/ComicShannsMonoNerdFontMono-Bold.otf') format('opentype');
+    src: url('../assets/fonts/ComicShannsMonoNerdFontMono-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
@@ -23,7 +23,7 @@ body {
     background-image: url(../assets/background/back2.jpg);
     background-position: center;
     background-attachment: fixed;
-    height: 200vh;
+    height: 100vh;
 }
 
 .header {
@@ -49,18 +49,33 @@ body {
 
 
 
+/*------------------- GRID CONTAINER SECTION ---------------*/
+
+.grid_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/*------------------- GRID CONTAINER ENDS ---------------*/
 
 
+
+
+
+/*------------------- GRID NAV SECTION ---------------*/
 
 .grid_nav {
+    margin-top: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
     padding: 10px;
     width: 90%;
-    margin: 15px auto;
-    border-radius: 10px;background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -76,12 +91,11 @@ body {
 }
 
 .grid_nav-list {
-    width: 50%;
+    width: 60%;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin: auto;
     padding-left: 10px;
     gap: 5px;
 }
@@ -96,15 +110,23 @@ body {
     text-align: center;
 }
 
+/*------------------- GRID NAV ENDS ---------------*/
 
 
 
 
 
+/*------------------- GRID MAIN SECTION ---------------*/
 
 .grid_main {
+    width: 95%;
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    max-height: 70dvh;
+    overflow-y: auto;
 }
+
+/*------------------- GRID MAIN ENDS ---------------*/
