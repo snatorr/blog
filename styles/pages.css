@@ -1,0 +1,42 @@
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 0;
+    font-family: 'ComicShanns', monospace;
+    /* FIX AQUÍ: Si .grid_main es un grid de varias columnas, esto hace que abarque todo el ancho */
+    grid-column: 1 / -1; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pagination-controls .page-btn {
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(124, 188, 214, 0.4);
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #2b4c5e;
+    font-family: 'ComicShanns', monospace;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.pagination-controls .page-btn:hover:not(:disabled) {
+    background: #eef6fa;
+    border-color: #7cbcd6;
+    transform: translateY(-1px);
+}
+
+.pagination-controls .page-btn.active {
+    background: #52a3cc;
+    color: white;
+    border-color: #52a3cc;
+    box-shadow: 0 2px 6px rgba(82, 163, 204, 0.3);
+}
+
+.pagination-controls .page-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}

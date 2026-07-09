@@ -1,6 +1,6 @@
 body {
     background-attachment: fixed;
-    min-height: 150dvh;
+    min-height: 200dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,11 +24,17 @@ body {
     margin: unset;
     height: unset;
     width: auto;
+    transition: transform 0.2s ease;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.35));
 }
 
+.header_logo:hover {
+    transform: scaleX(1.1);
+}
 
-
-
+.separador {
+    display: block;
+}
 
 /*------------------- GRID CONTAINER SECTION ---------------*/
 
@@ -36,7 +42,7 @@ body {
     border-radius: 20px;
     overflow: hidden;
     width: 85%;
-    height: 130dvh;
+    height: 175dvh;
     gap: unset;
     align-items: unset;
     flex-direction: unset;
@@ -73,6 +79,7 @@ body {
     display: unset;
     max-width: 100%;
     padding-bottom: 10px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.35));
 }
 
 .grid_nav-picture {
@@ -81,6 +88,16 @@ body {
     border-image-source: url(../assets/nav-assets/glitterborder.gif);
     border-image-slice: 20;
     border-image-repeat: stretch;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.35));
+}
+
+.grid_nav-nickname {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #16e;
+    font-style: italic;
 }
 
 .grid_nav-list {
@@ -88,6 +105,10 @@ body {
 }
 
 .ipod-widget {
+    display: unset;
+}
+
+.momi-paint-widget-left {
     display: unset;
 }
 
@@ -142,17 +163,33 @@ body {
     display: unset;
 }
 
+.grid_aside-picture {
+    max-width: 100%;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.35));
+    transition: transform 0.2s ease;
+}
+
+.grid_aside-picture:hover {
+    transform: skewX(10deg);
+}
+
+.grid_aside-second-picture {
+    max-width: 100%;
+    margin-left: 20px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.35));
+}
+
 .grid_aside-list {
+    padding: 10px 0;
+    border-top: 2px dashed rgba(82, 71, 0, 0.373);
+    border-bottom: 2px dashed rgba(82, 71, 0, 0.373);
     display: flex;
     flex-direction: column;
     list-style-type: none;
     width: 90%;
     margin: auto;
     gap: 5px;
-}
-
-.grid_aside-list-item {
-
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.35));
 }
 
 .grid_aside-link {

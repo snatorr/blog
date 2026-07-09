@@ -17,6 +17,7 @@
         <nav class="grid_nav">
             <img class="grid_nav-welcome" src="assets/nav-assets/welcome.gif">
             <img class="grid_nav-picture" src="assets/nav-assets/me.webp">
+            <p class="grid_nav-nickname">BASURA</p>
             <ul class="grid_nav-list">
                 <li class="grid_nav-list-item">
                     <a href="https://www.instagram.com/santisolosanti" class="grid_nav-link" target="_blank">instagram</a>
@@ -28,6 +29,8 @@
                     <a href="https://x.com/exzetagames" class="grid_nav-link" target="_blank">twitter</a>
                 </li>
             </ul>
+
+            <hr class="separador">
 
             <div class="ipod-widget">
                 <div class="ipod">
@@ -57,11 +60,88 @@
                 </div>
             </div>
 
+            <hr class="separador">
+
+            <div class="momi-paint-widget-left">
+                <!-- Barra de título clásica -->
+                <div class="paint-window-bar">
+                    <span class="paint-title">todos pvtos :v</span>
+                    <div class="paint-window-controls">
+                        <span class="paint-btn-mini">_</span>
+                        <span class="paint-btn-mini">✕</span>
+                    </div>
+                </div>
+            
+                <!-- Barra de Menú -->
+                <div class="paint-menu-bar">
+                    <span>File</span>
+                    <span>Edit</span>
+                    <span>View</span>
+                    <span onclick="clearCanvas()" class="clear-menu-btn">Clear</span>
+                </div>
+            
+                <div class="paint-body">
+                    <!-- Lienzo interactivo -->
+                    <canvas id="momiPaintCanvasLeft" width="232" height="170"></canvas>
+                </div>
+            
+                <!-- PALETA COMPLETA DE DOS FILAS -->
+                <div class="paint-footer-palette">
+                    <!-- Indicador de color seleccionado a la izquierda -->
+                    <div class="selected-indicator-box">
+                        <div id="momiCurrentColorPreview" style="background: #000000;"></div>
+                    </div>
+
+                    <!-- Contenedor de la cuadrícula de colores -->
+                    <div class="colors-grid-container">
+                        <!-- FILA SUPERIOR -->
+                        <div class="color-pixel" style="background: #000000;" onclick="selectPaintColor('#000000')"></div>
+                        <div class="color-pixel" style="background: #808080;" onclick="selectPaintColor('#808080')"></div>
+                        <div class="color-pixel" style="background: #800000;" onclick="selectPaintColor('#800000')"></div>
+                        <div class="color-pixel" style="background: #808000;" onclick="selectPaintColor('#808000')"></div>
+                        <div class="color-pixel" style="background: #008000;" onclick="selectPaintColor('#008000')"></div>
+                        <div class="color-pixel" style="background: #008080;" onclick="selectPaintColor('#008080')"></div>
+                        <div class="color-pixel" style="background: #000080;" onclick="selectPaintColor('#000080')"></div>
+                        <div class="color-pixel" style="background: #800080;" onclick="selectPaintColor('#800080')"></div>
+                        <div class="color-pixel" style="background: #808040;" onclick="selectPaintColor('#808040')"></div>
+                        <div class="color-pixel" style="background: #004040;" onclick="selectPaintColor('#004040')"></div>
+                        <div class="color-pixel" style="background: #0080ff;" onclick="selectPaintColor('#0080ff')"></div>
+                        <div class="color-pixel" style="background: #004080;" onclick="selectPaintColor('#004080')"></div>
+                        <div class="color-pixel" style="background: #400080;" onclick="selectPaintColor('#400080')"></div>
+                        <div class="color-pixel" style="background: #804000;" onclick="selectPaintColor('#804000')"></div>
+                    
+                        <!-- FILA INFERIOR -->
+                        <div class="color-pixel" style="background: #ffffff;" onclick="selectPaintColor('#ffffff')"></div>
+                        <div class="color-pixel" style="background: #c0c0c0;" onclick="selectPaintColor('#c0c0c0')"></div>
+                        <div class="color-pixel" style="background: #ff0000;" onclick="selectPaintColor('#ff0000')"></div>
+                        <div class="color-pixel" style="background: #ffff00;" onclick="selectPaintColor('#ffff00')"></div>
+                        <div class="color-pixel" style="background: #00ff00;" onclick="selectPaintColor('#00ff00')"></div>
+                        <div class="color-pixel" style="background: #00ffff;" onclick="selectPaintColor('#00ffff')"></div>
+                        <div class="color-pixel" style="background: #0000ff;" onclick="selectPaintColor('#0000ff')"></div>
+                        <div class="color-pixel" style="background: #ff00ff;" onclick="selectPaintColor('#ff00ff')"></div>
+                        <div class="color-pixel" style="background: #ffff80;" onclick="selectPaintColor('#ffff80')"></div>
+                        <div class="color-pixel" style="background: #00ff80;" onclick="selectPaintColor('#00ff80')"></div>
+                        <div class="color-pixel" style="background: #e0f7fa;" onclick="selectPaintColor('#e0f7fa')"></div>
+                        <div class="color-pixel" style="background: #aab6ff;" onclick="selectPaintColor('#aab6ff')"></div>
+                        <div class="color-pixel" style="background: #ffa07a;" onclick="selectPaintColor('#ffa07a')"></div>
+                        <div class="color-pixel" style="background: #ffb6c1;" onclick="selectPaintColor('#ffb6c1')"></div>
+                    </div>
+                </div>
+            </div>
+
 
         </nav>
         <main class="grid_main">
         </main>
         <aside class="grid_aside">
+            <img class="grid_aside-picture" src="assets/aside-assets/cachorrao.png">
+            <div class="sticky-note-widget">
+                <div class="sticky-note">
+                    <h3  class="note-title">¡AVISO!</h3>
+                    <div class="note-content">hola soy basura quiero ser famoso</div>
+                </div>
+            </div>
+            <img class="grid_aside-second-picture" src="assets/aside-assets/pokemon.webp">
             <ul class="grid_aside-list">
                 <li class="grid_aside-list-item">
                     <a href="https://www.instagram.com/santisolosanti" class="grid_aside-link" target="_blank">instagram</a>
@@ -73,6 +153,12 @@
                     <a href="https://x.com/exzetagames" class="grid_aside-link" target="_blank">twitter</a>
                 </li>
             </ul>
+            <div class="time-widget-container">
+                <div class="time-widget-screen">
+                    <span class="time-widget-title">TIEMPO EN EL BLOG</span>
+                    <div id="blogSessionTimer" class="time-widget-digits">00:00</div>
+                </div>
+            </div>
         </aside>
     </div>
 
@@ -87,9 +173,13 @@
 
 
 
-    <script src="scripts/bubbles.js"></script>
     <script src="scripts/tittles.js"></script>
     <script src="scripts/posts.js"></script>
     <script src="scripts/ipod.js"></script>
+    <script src="scripts/pages.js"></script>
+    <script src="scripts/paint.js"></script>
+    <script src="scripts/nickname.js"></script>
+    <script src="scripts/bubbles.js"></script>
+    <script src="scripts/time.js"></script>
 </body>
 </html>

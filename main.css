@@ -3,3 +3,8 @@
 @import url("styles/bubbles.css");
 @import url("styles/posts.css");
 @import url("styles/ipod-widget.css") (min-width: 1024px);
+@import url("styles/pages.css");
+@import url("styles/paint.css") (min-width: 1024px);
+@import url("styles/time.css");
+@import url("styles/note.css");
+@import url("styles/separador.css");

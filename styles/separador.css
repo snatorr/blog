@@ -1,0 +1,6 @@
+.separador {
+    border: none; 
+    border-top: 2px dashed rgba(82, 71, 0, 0.373);; 
+    margin: 10px auto;
+    width: 90%; 
+}

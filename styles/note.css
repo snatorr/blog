@@ -1,0 +1,44 @@
+.sticky-note-widget {
+    all: initial;
+    display: block;
+}
+
+.sticky-note-widget .sticky-note {
+    width: 150px;
+    min-height: 150px;
+    background: linear-gradient(135deg, #ffe745 80%, #ffd91a 100%);
+    padding: 18px;
+    margin: 20px  auto;
+    position: relative;
+    border-radius: 2px 2px 20px 2px;
+    box-shadow: 
+        3px 15px  15px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    border: 1px solid #ebcf1a;
+    transform: rotate(-1deg);
+    transition: transform 0.2s ease;
+}
+
+.sticky-note-widget .sticky-note:hover {
+    transform: rotate(1deg) scale(1.02);
+}
+
+.sticky-note-widget .note-title {
+    font-family: 'ComicShanns', monospace;
+    font-size: 15px;
+    color: #524700;
+    margin: 0 0 12px 0;
+    text-align: center;
+    border-bottom: 2px dashed rgba(82, 71, 0, 0.2);
+    padding-bottom: 6px;
+}
+
+.sticky-note-widget .note-content {
+    font-family: 'ComicShanns', monospace;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333333;
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+}

@@ -2,6 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // EDITAR ENTRADAS
     const entradas = [
         {
+            titulo: "BIENVENIDOS A TODOS",
+            fecha: "9 de julio de 2026",
+            contenido: "HOLA HIJOS DE MIL PUTA SOY EX ZETA GAMES  bienvenidos  ami blog aqui voy a  subir mispendejadas hijos deputa nos vemos",
+            imagen:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-xgMEa3__z8mwviABHraYWKgoCbaFU05cnn3_ycHxkLnZYS526hcC7zk5&s=10"
+        },
+        {
             titulo: "XD",
             fecha: "8 de julio de 2026",
             contenido: "lpm solo se ve en pc ok es q sino m rompe todo el mobilefirst"

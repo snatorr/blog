@@ -1,0 +1,64 @@
+.time-widget-container {
+    /* Ocupa todo el ancho de tu aside pero con un tope para que no quede gigante */
+    width: 100%;
+    max-width: 180px; 
+    padding: 8px;
+    /* Usamos la paleta de tus botones pero con el degradado gloss brillante */
+    background: linear-gradient(180deg, #5cb0df 0%, #0083c0 45%, #006090 100%);
+    border: 1px solid #9ad7ff;
+    border-radius: 12px;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.25),
+        inset 0 2px 4px rgba(255, 255, 255, 0.6),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* El reflejo de luz arriba del marco */
+.time-widget-container::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    right: 4px;
+    height: 35%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 10px 10px 2px 2px;
+    pointer-events: none;
+}
+
+.time-widget-screen {
+    /* Un azul un poco más oscuro integrado para que los números resalten */
+    background: linear-gradient(180deg, #004d73 0%, #006e9c 100%);
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    box-shadow: 
+        inset 0 3px 6px rgba(0, 0, 0, 0.55),
+        0 1px 1px rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-widget-title {
+    font-family: 'ComicShanns', monospace;
+    font-size: 10px; /* Un toque más chico para que entre cómodo en una línea */
+    font-weight: bold;
+    color: #aae0ff; /* Texto celeste claro para que reviva en el fondo oscuro */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.time-widget-digits {
+    font-family: 'ComicShanns', monospace;
+    font-size: 26px; /* Ajustado el tamaño para que no rompa el contenedor */
+    font-weight: bold;
+    color: #ffffff; /* Blanco puro para que haga juego con el texto de tus botones */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    line-height: 1;
+}

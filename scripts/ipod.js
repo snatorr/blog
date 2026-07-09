@@ -3,8 +3,12 @@ let current = 0;
 let progressInterval;
 let isPlaying = false;
 
-// 1. CONFIGURACIÓN DE TU MÚSICA LOCAL
 const playlist = [
+    {
+        title: "cooL",
+        file: "assets/music/cool.mp3",
+        cover: "assets/cover/zelly.jpg"
+    },
     {
         title: "lo que pasa",
         file: "assets/music/lo-que-pasa.mp3",
@@ -22,12 +26,10 @@ const playlist = [
     }
 ];
 
-// Inicializamos el reproductor nativo
 function initPlayer() {
     player = new Audio(playlist[current].file);
     updateUI();
 
-    // Cuando termina la canción, pasa a la siguiente automáticamente
     player.onended = () => {
         nextTrack();
     };
@@ -38,7 +40,6 @@ function updateUI() {
     document.getElementById("cover").src = playlist[current].cover;
 }
 
-// Botón Reproducir / Pausar
 document.getElementById("play").onclick = () => {
     if (!player) return;
     const btnPlay = document.getElementById("play");
@@ -56,7 +57,6 @@ document.getElementById("play").onclick = () => {
     }
 };
 
-// Función Siguiente
 function nextTrack() {
     if (!player) return;
     const wasPlaying = !player.paused;
@@ -75,7 +75,6 @@ function nextTrack() {
 }
 document.getElementById("next").onclick = nextTrack;
 
-// Botón Anterior
 document.getElementById("prev").onclick = () => {
     if (!player) return;
     const wasPlaying = !player.paused;
@@ -93,7 +92,6 @@ document.getElementById("prev").onclick = () => {
     }
 };
 
-// Temporizador de la Barra de Progreso
 function startProgressTimer() {
     clearInterval(progressInterval);
     progressInterval = setInterval(() => {
@@ -118,7 +116,6 @@ function formatTime(time) {
     return mins + ":" + (secs < 10 ? "0" : "") + secs;
 }
 
-// Adelantar/Atrasar tocando la barra
 document.getElementById("progress-container").onclick = function(e) {
     if (player && player.duration) {
         const rect = this.getBoundingClientRect();
@@ -135,7 +132,6 @@ document.getElementById("progress-container").onclick = function(e) {
     }
 };
 
-// ACÁ CAMBIAMOS A DOMCONTENTLOADED
 document.addEventListener("DOMContentLoaded", () => {
     initPlayer();
 });
