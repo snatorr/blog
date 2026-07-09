@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // EDITAR ENTRADAS
     const entradas = [
         {
+            titulo: "Q FRIO ASE",
+            fecha: "9 de julio de 2026",
+            contenido: "DIOS Q FRIO Q TENGO LA CONCHA D LA LORA"
+        },
+        {
             titulo: "BIENVENIDOS A TODOS",
             fecha: "9 de julio de 2026",
             contenido: "HOLA HIJOS DE MIL PUTA SOY EX ZETA GAMES  bienvenidos  ami blog aqui voy a  subir mispendejadas hijos deputa nos vemos",
