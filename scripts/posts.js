@@ -2,6 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // EDITAR ENTRADAS
     const entradas = [
         {
+            titulo: "MIREN MI CAFE :3",
+            fecha: "10 de julio de 2026",
+            contenido: "miren mi cafe les gusta o no diganme por ig",
+            imagen: "assets/pictures/post.heinc"
+        },
+        {
             titulo: "Q FRIO ASE",
             fecha: "9 de julio de 2026",
             contenido: "DIOS Q FRIO Q TENGO LA CONCHA D LA LORA"
