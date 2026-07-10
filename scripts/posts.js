@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             titulo: "MIREN MI CAFE :3",
             fecha: "10 de julio de 2026",
             contenido: "miren mi cafe les gusta o no diganme por ig",
-            imagen: "assets/pictures/post.heif"
+            imagen: "assets/pictures/post.heic"
         },
         {
             titulo: "Q FRIO ASE",
