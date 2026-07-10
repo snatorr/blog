@@ -47,7 +47,7 @@
     height: auto;
     margin: 15px auto;
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.35));
 }
 
 .post-separador {
