@@ -2,6 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // EDITAR ENTRADAS
     const entradas = [
         {
+            titulo: "VOLVI HOLA",
+            fecha: "16 de julio de 2026",
+            contenido: "HOLA AMIGOS DE MI BLOG me desapareci porke estoy tratando de remodelar tdo el blog pero me dio paja okei bay me voy vuelvo en 7 meses",
+            imagen: "https://media.tenor.com/lKjN4aBzSxQAAAAM/ricardo-ford.gif"
+        },
+        {
             titulo: "MIREN MI CAFE :3",
             fecha: "10 de julio de 2026",
             contenido: "miren mi cafe les gusta o no diganme por ig",
